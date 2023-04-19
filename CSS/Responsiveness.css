@@ -1,0 +1,280 @@
+/*---------------------------------------------------------- Responsiveness ---------W----------------------------------------------*/
+
+@import url("style.css");
+
+/*----------------------------------------- Media Queries (4K Screens) -------------------------------------------------------------
+@media screen and (min-width: 1440px) and (max-width: 3840px){
+	.container {
+		width: var(--container-width-md);
+	}
+
+	h1{
+		font-size: 4.0rem;
+	}
+
+	h2{
+		font-size: 3rem;
+	}
+
+	h3{
+		font-size: 2.4rem;
+	}
+
+	h4{
+		font-size: 2.2rem;
+	}
+
+	p{
+		font-size: 1.1rem;
+	}
+
+	.skills__info p{
+		font-size: 1.1rem;
+	}
+
+	.nav__menu li a{
+		font-size: 1.1rem;
+	}
+}*/
+
+/*----------------------------------------- Media Queries (Tablets) -------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1024px){
+	.container {
+		width: var(--container-width-md);
+	}
+
+	h1{
+		font-size: 2.0rem;
+	}
+
+	h2{
+		font-size: 1.5rem;
+	}
+
+	h3{
+		font-size: 1.2rem;
+	}
+
+	h4{
+		font-size: 1.1rem;
+	}
+
+
+	/*--------------------------------------- Navbar -----------------------------------------------------------------*/
+
+
+	nav button {
+		display: inline-block;
+		background: transparent;
+		font-size: 1.8rem;
+		color: var(--color-white);
+		cursor: pointer;
+	}
+
+	nav button#close-menu-btn{
+		display: none;
+	}
+
+	.nav__menu{
+		position: fixed;
+		top: 5rem;
+		right: 5%;
+		height: fit-content auto;
+		width: 10rem;
+		flex-direction: column;
+		gap: 0;
+		display: none;
+	}
+
+	.nav__menu li {
+		width: 100%;
+		height: 3.5rem;
+		animation: animateNavItems 400ms linear forwards;
+		transform-origin: center;
+		opacity: 0;
+	}
+
+	.nav__menu li:nth-child(2) {
+		animation-delay: 200ms;
+	}
+
+	.nav__menu li:nth-child(3) {
+		animation-delay: 400ms;
+	}
+
+	.nav__menu li:nth-child(4) {
+		animation-delay: 600ms;
+	}
+
+	.nav__menu li:nth-child(5) {
+		animation-delay: 800ms;
+	}
+
+	@keyframes animateNavItems {
+		0%{
+			/*transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);*/
+			transform: translateY(-3.5rem);
+		}
+		100% {
+			/*transform: rotateZ(0) rotateX(0) scale(1);*/
+			opacity: 1;
+		}
+	}
+
+	.nav__menu li a{
+		background: var(--color-primary);
+		box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		display: grid;
+		place-items: center;
+	}
+
+	.nav__menu li a:hover{
+		background: var(--color-bg2);
+		color: var(--color-white);
+	}
+
+	header{
+		width: 100%;
+		height: 85vh;
+		margin-bottom: 4rem;
+	}
+
+	.background__container {
+		gap: 0;
+		padding-bottom: 3rem;
+	}
+
+	.three {
+		transition: var(--transition);
+		display: none;
+	}
+
+	/*------------------------------------------------  Projects  ------------------------------------------------------------*/
+
+	.projects {
+		height: auto;
+	}
+
+	.projects__container{
+		grid-template-columns: 1fr;
+		grid-gap: 3rem;
+	}
+
+	.projects__left{
+		margin-right: 0;
+	}
+
+	/*------------------------------------------------  Skills  ------------------------------------------------------------*/
+
+	.skills{
+		margin-top: 0;
+	}
+
+	.skills__container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/*------------------------------------------------  Certifications  ------------------------------------------------------------*/
+
+	.certifications{
+		margin-top: 0;
+	}
+
+	.certifications__container{
+		grid-template-columns: 1fr 1fr;
+	}
+
+
+	/*------------------------------------------------  Footer  ------------------------------------------------------------*/
+
+	.footer__container{
+		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
+	}
+}
+
+/*-------------------------------------------------------------------------------------------  MEDIA QUERIES(PHONES)  -----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px){
+
+	.container {
+		width: var(--container-width-sm);
+	}
+
+	/*--------------------------------------- Navar -----------------------------------------------------------------*/
+	.nav__menu{
+		right: 3%;
+	}
+
+	header{
+		height: 100vh;
+	}
+
+	.header__container {
+		grid-template-columns: 1fr;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.three {
+		display: none;
+	}
+
+	.four {
+		display: none;
+	}
+
+	.content p{
+		margin-bottom: 1.3rem;
+	}
+
+	/*------------------------------------------------  Projects  ------------------------------------------------------------*/
+
+	.projects__right{
+		grid-template-columns: 1fr;
+		gap: 0.7rem;
+	}
+
+	.project{
+		padding: 1rem;
+		border-radius: 1rem;
+	}
+
+	.project__icon {
+		margin-top: 4px;
+		display: inline-block;
+	}
+
+	/*------------------------------------------------  Skills  ------------------------------------------------------------*/
+
+	.skills__container {
+		grid-template-columns: 1fr;
+	}
+
+	/*------------------------------------------------  Certifications  ------------------------------------------------------------*/
+
+	.certifications__container{
+		grid-template-columns: 1fr;
+	}
+
+	/*------------------------------------------------  Footer  ------------------------------------------------------------*/
+
+	.footer__container{
+		grid-template-columns: 1fr;
+		text-align: center;
+		gap: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.footer__1 p{
+		margin: 1rem auto;
+	}
+
+	.social-links{
+		justify-content: center;
+	}
+}

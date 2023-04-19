@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/project.css">
+		<link rel="stylesheet" href="CSS/Responsiveness.css">
+		<link rel="stylesheet" href="CSS/BackToTop.css">
+		<link rel="stylesheet" type="text/css" href="CSS/project_carousel.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+		<!--  ICONS CDN-->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+		<!--  FONT IMPORT  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<title>Projects</title>
+
+	</head>
+
+	<body>
+		<nav>
+			<div class="container nav__container">
+				<a href="index.html"><h4>DAVID ILUNGA</h4></a>
+				<ul class="nav__menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="skills.html">Skills</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>
+				<button id="open-menu-btn"><i class="ri-menu-line"></i></button>
+				<button id="close-menu-btn"><i class="ri-close-line"></i></button>
+			</div>
+		</nav>
+
+		<button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+		<section class="project-showcase">
+			<a class="anchor" id="top"></a>
+			
+			<div class="container">
+				<h1 class="heading-regular"><b>Overview</b></h1>
+				<p>Over the past few years, I have been constantly building on my coding ability, trying to improve and get better. In doing so, i have come across and created, as well as modified pieces of code to do various tasks or are a part of some larger projects.
+					<br><br>
+					These have all been done in various languages, including the likes of Python, Java, Flutter, HTML, CSS, C# and many more. Please click on the language that you would like to explore:</p><br>
+				
+				<div class="main-project-container">
+					 <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/python.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>Python</h4><br>
+                            <h5>Advanced</h5>    
+                            <p>Python has been my main coding language due to its versatility, practicality, and ease of use. The use cases that Python has is found to be nothing but beneficial, especially for me when learning the structure of new languages. If you’d like to read more about my journey with Python, please click below.</p>
+                            <button class="btn-primary project-btn" onclick="togglePopUp('Python')">Read More</button>
+                        </div>    
+                    </article>
+
+                   <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/java.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>Java</h4><br>
+                            <h5>Advanced</h5>    
+                            <p class="project-info">Java, an objected-oriented programing language that is versatile in the world. With this, I’ve gone on to create some amazing projects that allow for the implementation of other languages, such as SQL and XML. If you’d like to read more about my experiences with Java, please click below.</p> 
+							<button class="btn-primary project-btn" onclick="togglePopUp('Java')">Read More</button>
+                        </div>    
+                    </article>
+
+                    <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/c-sharp.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>C#</h4><br>
+                            <h5>Intermediate</h5>    
+                            <p class="project-info">C# for me was an introduction to the different use cases for code as it was the first language that I put to test in a real-life environment. C# is more than just a language. It is also a universal language for manipulation of code in workspaces like Unity. To read more about C#, please click below.</p> 
+							<button class="btn-primary project-btn" onclick="togglePopUp('C')">Read More</button>
+                        </div>    
+                    </article>
+
+                    <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/Flutter.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>Flutter</h4><br>
+                            <h5>Intermediate</h5>    
+                            <p class="project-info">Flutter piqued my interest in app development due to its ability to program an app for both Android and iOS. This proved to be beneficial as the project’s code was optimized for both platforms allowing cross-platform programming. To read more about my experience with Flutter, please click below.</p> 
+								<button class="btn-primary project-btn" onclick="togglePopUp('Flutter')">Read More</button>		
+                        </div>    
+                    </article>
+
+                    <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/html_css_js.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>HTML, CSS & JS</h4><br>
+                            <h5>Advanced</h5>    
+                            <p class="project-info">As standalone languages, they can be put to good use, but together, they create a basis for website development. Using these languages, I’ve come to make projects like this portfolio, and improve my knowledge about websites and scripting. To read more about these languages, please click below.</p> 
+							<button class="btn-primary project-btn" onclick="togglePopUp('HTML')">Read More</button>
+                        </div>    
+                    </article>
+
+                    <article class="project-article">
+                        <div class="project__image">    
+                            <div class="project__image-left">                            
+                                <img src="IMAGES/Skill-Icons/Android_Studio.png" alt="">    
+                            </div>    
+                            <div class="project__image-right">                            
+                                
+                            </div>    
+                        </div>
+                        <div class="skills__info">    
+                            <h4>Android Studio</h4><br>
+                            <h5>Intermediate</h5>    
+                            <p class="project-info">Android Studio, a developer’s software to begin creating apps for the Google Play Store. The range in experience varies with this software, as the level of progress is open to all levels of developers; from those who are experts to complete beginners. If you’d like to hear about my journey, please click below.</p> 
+							<button class="btn-primary project-btn" onclick="togglePopUp('Android')">Read More</button>
+                        </div>    
+                    </article>					
+				</div>
+			</div>
+		
+		</section>
+
+		<div class="popup" id="popup">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="close-btn" onclick="togglePopUp()">&times;</div>
+				<h1 id="Popup-Title"></h1>
+				<p id="Popup-Content"></p>
+				<button class="btn-primary overlay-btn" id="OpenGithub" onclick="OpenGithubPage()">Open on Github<i class="ri-arrow-right-up-line"></i></button>
+			</div>
+		</div>
+		
+		<script src="JAVASCRIPT/main.js"></script>
+		<script src="JAVASCRIPT/BackToTop.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+			var OpenGithub = document.getElementById("OpenGithub");
+			var selection = "";
+
+			function togglePopUp(value) {
+				document.getElementById("popup").classList.toggle("active");
+				document.body.classList.toggle('noscroll');
+
+				selection = value;
+				console.log(selection);
+
+				if(value == 'Android') {
+					document.getElementById("Popup-Title").innerHTML = "Android Studio";
+					document.getElementById("Popup-Content").innerHTML = "Android studio allows me to create/develop applications that can be used on Android devices. This application is very extensive as it allows us as developers to build and debug apps regardless of the Android version as they can be individually set depending on the project. Developers can either use emulators or physical devices to conduct their testing and see in real-time what their new application will look like on an actual device.";
+				}
+
+				else if(value == 'C') {
+					document.getElementById("Popup-Title").innerHTML = "C#";
+					document.getElementById("Popup-Content").innerHTML = "C# is open-source, cross-platform, object-oriented programming language. It is also the most popular language for .NET development. With .NET you can target any application type running on any platform. It pushes you to reuse your skills, code, and favorite libraries across all of them in a familiar environment. That means you can build apps faster, with less cost - from mobile applications running on iOS and Android.";
+				}
+
+				else if(value == 'Flutter') {
+					document.getElementById("Popup-Title").innerHTML = "Flutter";
+					document.getElementById("Popup-Content").innerHTML = "Flutter is a mobile UI framework created by Google that allows you to create a native mobile application with only one codebase. This means that you can use one programming language and one codebase to create two different apps (for iOS and Android). Flutter does require the use of an SDK (Software Development Kit) to compile your code into native machine code (code for iOS and Android). It also uses a Framework (UI Library based on widgets) so you can use a collection of UI elements like buttons, text inputs, sliders etc. that you can personalize your application for your own needs.";
+				}
+
+				else if(value == 'HTML') {
+					document.getElementById("Popup-Title").innerHTML = "HTML, CSS and Javascript";
+					document.getElementById("Popup-Content").innerHTML = "HTML, CSS and Javascript are all lanugages that when used individually, amazing apps with amazing UIs can be created, but when used together can bulid a website that can be incredibly dynamic and can be used in a professional format, whether that's to se it as a portfolio, a shopping website or even a dashbord presenting information. HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. This would include various elements, such as a table, button, textfields etc. CSS is used to control presentation, formatting, and layout and JavaScript is used to control the behavior of different elements.";
+				}
+
+				else if(value == 'Java') {
+					document.getElementById("Popup-Title").innerHTML = "Java";
+					document.getElementById("Popup-Content").innerHTML = "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers run the code anywhere, meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine regardless of the underlying computer architecture.";
+				}
+
+				else if(value == 'Python') {
+					document.getElementById("Popup-Title").innerHTML = "Python";
+					document.getElementById("Popup-Content").innerHTML = "Python is an object-oriented programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, and it supports modules and packages, which encourages program modularity and code reuse. Python allows for apps to be easily constructed and can be very useful for creating apps that require rapid prototyping and quick feedback stages over long development and testing cycles. Below I have listed some of the following apps that I have made and or broken down.";
+				}
+			}
+
+			function OpenGithubPage(){
+				if(selection == 'Android') {
+					window.open('https://github.com/davidilunga/University-Projects/tree/Second-Year/Android%20Studio', '_blank');
+				} else if(selection == 'C') {
+					window.open('https://github.com/davidilunga/', '_blank');
+				} else if(selection == 'Flutter') {
+					window.open('https://github.com/davidilunga/', '_blank');
+				} else if(selection == 'HTML') {
+					window.open('https://github.com/davidilunga/University-Projects/tree/First-Year/HTML%20%26%20CSS', '_blank');
+				} else if(selection == 'Java') {
+					window.open('https://github.com/davidilunga/University-Projects/tree/First-Year/Java', '_blank');
+				} else if(selection == 'Python') {
+					window.open('https://github.com/davidilunga/Python', '_blank');
+				}
+			}
+
+		</script>
+
+		<footer>
+
+            <div class="container footer__container">
+                <div class="footer__1">
+                    <a href="index.html" class="footer__logo"><h4>DAVID ILUNGA</h4></a>
+                    <p>+44 7403 466083<br>
+                    dilunga23@yahoo.co.uk</p>
+                </div>
+                <div class="footer__2">
+                    <h4>Links</h4>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__3">
+                    <h4><span style="color: var(--color-bg1);">D</span></h4>
+                    <ul class="links">
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__4">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/David-Ilunga/100071013707383/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/david.ilunga_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/david-ilunga/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/davidilunga/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-est">
+                <p>EST. 2023 Created by David M. Ilunga <span>&copy;</span></p>
+            </div>
+
+        </footer>
+
+	</body>
+
+</html>

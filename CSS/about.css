@@ -1,0 +1,188 @@
+
+@import url("style.css");
+/*---------------------------------------------------- About Me ------------------------------------------------------------*/
+
+.about__container {
+	margin-top: 5rem;
+	background: var(--color-bg1);
+}
+
+/*.about__experience-container{
+	display: grid;
+	grid-template-columns: 35% 65%;
+	gap: 5rem;
+}*/
+
+.about__container > p {
+	margin-top: 1.6rem 0 2.5rem;
+}
+
+.experience__cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.experience__card{
+	background: var(--color-bg3);
+	padding: 1.6rem;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.experience__card:hover{
+	background: var(--color-bg2);
+	box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.experience__icon{
+	background: var(--color-danger);
+	padding: 0.6rem;
+	border-radius: 1rem;
+	display: inline-block;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.experience__card:nth-child(2) .experience__icon{
+	background: var(--color-success);
+}
+
+.experience__card:nth-child(3) .experience__icon{
+	background: var(--color-primary);
+}
+
+.experience__card:nth-child(4) .experience__icon{
+	background: var(--color-warning);
+}
+
+.about__experience-left {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	width: 50%;
+}
+
+.about__experience-center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	width: 100%;
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform .75s
+    cubic-bezier(0.4, 0.03, 0.5, 0.9);
+}
+
+.card__image {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    outline: 2px solid #fff;
+    outline-offset: 5px;
+    backface-visibility: hidden;
+}
+
+#doc-link {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#doc-link:hover {
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------  Timeline  ----------------------------------------------------------------------------------------*/
+.timeline{
+	background: var(--color-bg);
+}
+
+/*----------------------------------------------------------------------------------  MEDIA QUERIES (TABLETS)    -------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) and (max-width: 1850px){
+	.card {
+		display: block;
+		transform: translate(-40%);
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.about__container{
+		margin-top: 5rem;
+	}
+
+	.about__experience-container{
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+
+	.about__experience-left{
+		display: none;
+	}
+
+	.card {
+		display: none;
+	}
+
+	.about__container > p {
+		margin-top: 1.6rem 0 2.5rem;
+	}
+
+	.experience__cards{
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+	}
+
+	.experience__card{
+		background: var(--color-bg3);
+		padding: 1.6rem;
+		border-radius: 1rem;
+		text-align: center;
+	}
+
+	.experience__card:hover{
+		background: var(--color-bg2);
+		box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+	}
+
+	.experience__icon{
+		background: var(--color-danger);
+		padding: 0.6rem;
+		border-radius: 1rem;
+		display: inline-block;
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+
+	/*--------- Carousel -----------------*/
+
+	.carousel {
+		position: relative;
+		height: 600px;
+		width: 80%;
+		margin:  0 auto;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.experience__cards{
+		grid-template-columns: 1fr 1fr;
+		gap: 0.7rem;
+	}
+
+	/*--------- Carousel -----------------*/
+
+	.carousel {
+		position: relative;
+		height: 600px;
+		width: 80%;
+		margin:  0 auto;
+	}
+}

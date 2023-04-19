@@ -1,0 +1,69 @@
+/*----------------------------------------------- Skills and Certifications ---------------------------------------------------*/
+.skills-space h1{
+  padding-left: 15%;
+}
+
+.skill-article{
+	background: var(--color-bg2);
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	transition: var(--transition);
+}
+
+.certifications h1{
+	line-height: 1;
+	margin-bottom: 3rem;
+	padding-left: 15%;
+}
+
+.certifications{
+	margin-top: 5rem;
+}
+
+.certifications__container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.certification{
+	background: var(--color-bg1);
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 2rem;
+	transition: var(--transition);
+}
+
+.certifications__info{
+	padding: 2rem;
+}
+
+.certifications__info p{
+	margin: 1.2rem 0 2rem;
+	font-size: 0.9rem;
+}
+
+.certifications .more {
+	width: 50%;
+}
+
+.certifications .more a{
+	width: 100%;
+	text-align: center;
+}
+
+.certifications__image{
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+
+.certifications__image-right img {
+	border-radius: 1rem;
+}
+
+.btn-secondary{
+	background: var(--color-bg1);
+	color: var(--color-white);
+}

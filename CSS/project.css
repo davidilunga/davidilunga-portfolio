@@ -1,0 +1,324 @@
+@import url("style.css");
+/*------------------------------------------------ TEST ------------------------------------------------------------*/
+
+.project-article{
+    background: var(--color-bg2);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.project__image{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.project__info{
+    padding: 2rem;
+}
+
+.project__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+/*------------------------------------------------ Project CSS --------------------------------------------------------*/
+
+html{
+    min-height: 100%;
+}
+.project-showcase{
+    margin-top: 6rem;
+}
+
+.project-highlight{
+    padding: 0.5rem;
+    display: grid;
+	grid-template-columns: 60% 40%;
+	gap: 2rem;
+    margin: 0.5rem;
+    height: 20rem;
+}
+
+.language_selection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    left: 50%;
+    top: 50% ;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+.selection{
+    border: none;
+    margin: 20px;
+    padding: 24px;
+    width: 300px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--color-black);
+    background-size: 200%;
+}
+
+.selection:hover{
+    background-image: linear-gradient(to left, #53718C, #5B8266, #53718C);
+    color: var(--color-white);
+    transition: ease-in;
+}
+
+.main-project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.project-container {
+    margin: 1.5rem;
+}
+
+.project-card{
+    width: 100%;
+    height: auto;
+    position : relative;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    object-fit: cover;
+    transition: .5s ;
+    border-radius: 2rem;
+}
+
+.project-content{
+    position: relative; 
+    padding: 10px; 
+    color: #fff; 
+    transition: .5s;
+    opacity: 0;
+} 
+
+.project-title{
+    text-transform: capitalize; 
+    text-align: center; 
+    font-weight: 300;
+    margin: 5%;
+}
+
+.project-info{ 
+    margin: 5%;
+    text-align: center;
+}
+
+.project-btn{
+    text-transform: uppercase; 
+    padding: 1% 5% 1% 5%;
+    width: 30%;
+    font-size: 16px;
+    border: none;
+    background: var(--color-danger);
+    color: var(--color-white);
+    margin: 0 25% 0 25%;
+    border-radius: 6px;
+}
+
+.project-btn a {
+    color: #fff;
+}
+
+.project-btn:hover{
+    background: transparent;
+    border: 1px solid transparent;
+    border-color: var(--color-white);
+    color: var(--color-white);
+    cursor: pointer;    
+}
+
+.project-btn:hover a{
+    color: var(--color-white) ;
+}
+
+.project-btn a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.overlay-btn {
+    text-transform: uppercase; 
+    padding: 1% 5% 1% 5%;
+    width: 40%;
+    font-size: 16px;
+    border: none;
+    background: var(--color-danger);
+    color: var(--color-white);
+    margin: 0 25% 0 25%;
+    border-radius: 6px;
+}
+
+.overlay-btn:hover{
+    background: transparent;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    cursor: pointer;    
+}
+
+.overlay-btn:hover a{
+    color: var(--color-black) ;
+}
+
+.project-card:hover .project-img{
+    filter: blur(15px);
+    transition: ease .5s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    opacity: 0.2;
+}
+
+.project-card:hover .project-content{
+    opacity: 1;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.noscroll { 
+  overflow: hidden;
+}
+
+.popup .overlay {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: var(--color-white);
+    width: 40%;
+    height: 30%;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--color-black);
+}
+
+.popup .content h1 {
+    color: var(--color-black);
+}
+
+#Popup-Content{
+    padding: 5%;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    overflow: auto;
+}
+
+@media screen and (min-width: 1600px){ 
+    .project-card{
+        min-height: 275px;
+    }
+}
+
+@media screen and (max-width: 1600px){ 
+    .project-card{
+        min-height: 200px;
+        width: auto;
+        height: auto;
+    }
+
+    .popup .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .main-project-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: .25rem;
+        text-align: center;
+    }
+
+    .project-card{
+        height: auto;
+        width: auto;
+        padding: 2%;
+    }
+
+    .project-title{
+        font-size: 24px; 
+        text-transform: capitalize; 
+        text-align: center; 
+        font-weight: 300;
+        margin: 2.5%;
+    }
+
+    .project-info{ 
+        margin: 2.5%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .project-btn{
+        text-transform: uppercase; 
+        padding: 1% 5% 1% 5%;
+        width: 30%;
+        font-size: 12px;
+        border: none;
+        background: var(--color-danger);
+        color: var(--color-white);
+        margin: 0 25% 0 25%;
+        border-radius: 6px;
+    }
+
+    .popup .content {
+        width: 60%;
+        height: 40%;
+        overflow: auto;
+    }
+
+    #Popup-Content{
+        overflow: scroll;
+    }
+}
